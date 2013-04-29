@@ -1,9 +1,6 @@
 require 'sinatra'
+set :public_folder, File.dirname(__FILE__) + '/public'
 
 get '/' do
-  'Hello world!'
-end
-
-get '/map' do
- send_file File.join('./', 'map.html')
+  'Nothing here..'
 end
