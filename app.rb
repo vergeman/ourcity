@@ -1,5 +1,6 @@
 require 'sinatra'
 
 get '/' do
-  'Nothing here..'
+  send_file File.join(settings.public_folder, 'index.html')
 end
+
