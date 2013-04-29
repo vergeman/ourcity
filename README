@@ -1,0 +1,5 @@
+this repo's heroku remote is pushed using subtree
+
+go to project root (../ourcity)
+
+`git subtree push --prefix maps heroku master`
