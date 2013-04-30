@@ -32,7 +32,7 @@ window.onload = function() {
     
 
     //center
-    map.setView([32.7153292, -117.1572551], 11);
+    map.setView([32.7153292, -117.0402551], 11);
 
     /*tiles*/
     L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
