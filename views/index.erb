@@ -9,7 +9,7 @@
     <!--[if lte IE 8]>
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.ie.css" />
     <![endif]-->
-    <link rel="stylesheet" href="./app.css" />
+    <%= css :application %>
 
   </head>
 
@@ -31,11 +31,8 @@
     </div>
 
 
-
-  </body>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   <script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
-  <script src="./San_Diego_Neighborhoods.js"></script>
-  <script src="./map.js"></script>
-
+  <%= js :app %>
+  </body>
 </html>
