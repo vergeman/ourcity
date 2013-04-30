@@ -17,7 +17,7 @@ class App < Sinatra::Base
       '/css/app.css'
     ]
 
-    js_compression  :uglify    # :jsmin | :yui | :closure | :uglify
+    js_compression  :yui, :munge => true    # :jsmin | :yui | :closure | :uglify
     css_compression :yui   # :simple | :sass | :yui | :sqwish
     
   end
