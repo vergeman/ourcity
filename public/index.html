@@ -1,25 +1,41 @@
 <!DOCTYPE HTML>
 <html>
-  <header>
-    <title>Prototype San Diego Map</title>
-  </header>
 
-  <body>
+  <head>
+    <title>Prototype San Diego Map</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
     <!--[if lte IE 8]>
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.ie.css" />
     <![endif]-->
+    <link rel="stylesheet" href="./app.css" />
 
-    <script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
+  </head>
 
-    <script src="./map.js"></script>
 
-    <div id="map" style="height: 500px;">
-Hi
+  <body>
+
+    <div id="map-list">
+      <h4>San Diego County</h4>
+      <div id="summary">Select a region</div>
+
+      <ul id="neighborhoods">	
+      </ul>
+      
+    </div>
+
+    <div id="map">
+
 
     </div>
 
+
+
   </body>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
+  <script src="./San_Diego_Neighborhoods.js"></script>
+  <script src="./map.js"></script>
 
 </html>
