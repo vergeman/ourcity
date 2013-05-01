@@ -1,3 +1,5 @@
+edit files in app directory for asset precompile
+
 this repo's heroku remote is pushed using subtree
 
 go to project root (../ourcity)
