@@ -14,9 +14,9 @@ def save_file( obj, filename )
 end
 
 
-obj =  load_user_lib('map.geojson')
+obj =  load_user_lib('app/js/San_Diego_Neighborhoods.geojson')
 
 obj["features"] = obj["features"].sort_by { |o| o["properties"]["name"] }
 
-save_file(obj, "San_Diego_Neighborhoods.json")
+save_file(obj, "app/js/sorted.json")
 
