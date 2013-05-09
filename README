@@ -43,4 +43,4 @@ Generate statics via:
 
 This repo's heroku remote is pushed using git subtree, to ignore/preserve the
 qgis parent subdirectory. Go to project root (../ourcity)
-     `git subtree push --prefix maps heroku master`
+     `git subtree push --prefix map heroku master`
