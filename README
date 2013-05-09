@@ -1,7 +1,46 @@
-edit files in app directory for asset precompile
+==README==
 
-this repo's heroku remote is pushed using subtree
+Ourcity San Diego Map Project
 
-go to project root (../ourcity)
+This is a basic sinatra app to demonstrate a leaflet.js map.
 
-`git subtree push --prefix maps heroku master`
+The editable app files are found in ./app.
+
+    css/
+	contains basic css stylings
+
+    js/
+
+	map.js: logic for leafleft.js
+
+	San_Diego_Neighborhoods.js: contains geoJSON-formatted
+	ourcityFeatures object.
+
+I've minified and packed the assets, which are generated in The
+/public directory. They contain both the generated files, and the
+originals which they are based upon, following the same directory
+structure as above. The "hashed" filenames represent the minified
+code, and the app.js & application.css files are the minified, bundled
+code.
+
+
+/views:
+
+contains the .erb file with html. Div's of interest are
+
+#neighborhoods - the sided pane unordered list populated with
+neighborhoods
+
+#map - div where the map attaches.
+
+
+
+==Misc Notes==
+Edit files in app directory for asset precompile
+
+Generate statics via: 
+`rake assetpack:build` 
+
+This repo's heroku remote is pushed using git subtree, to ignore/preserve the
+qgis parent subdirectory. Go to project root (../ourcity)
+     `git subtree push --prefix maps heroku master`
